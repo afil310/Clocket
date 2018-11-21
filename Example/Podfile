@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Clocket_Example' do
+  pod 'Clocket', :path => '../'
+
+  target 'Clocket_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
