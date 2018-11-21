@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7HH-P4-xxR">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="B50-7e-Qxh">
+            <objects>
+                <viewController id="7HH-P4-xxR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IRC-Fd-Gwt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm-clock" translatesAutoresizingMaskIntoConstraints="NO" id="txx-qY-m0b">
+                                <rect key="frame" x="167" y="229" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CTT-DG-oft"/>
+                                    <constraint firstAttribute="width" secondItem="txx-qY-m0b" secondAttribute="height" multiplier="1:1" id="IR4-GU-5Ih"/>
+                                    <constraint firstAttribute="width" constant="120" id="p5g-90-Cfe"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CTT-DG-oft"/>
+                                        <exclude reference="p5g-90-Cfe"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="CTT-DG-oft"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="p5g-90-Cfe"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="txx-qY-m0b" firstAttribute="centerX" secondItem="IRC-Fd-Gwt" secondAttribute="centerX" id="5AT-4z-GZv"/>
+                            <constraint firstItem="txx-qY-m0b" firstAttribute="centerY" secondItem="IRC-Fd-Gwt" secondAttribute="centerY" id="fxh-JT-qUc"/>
+                            <constraint firstItem="txx-qY-m0b" firstAttribute="centerY" secondItem="IRC-Fd-Gwt" secondAttribute="centerY" multiplier="0.6" id="icM-J0-yxG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3tv-Xf-d5X"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fxh-JT-qUc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="fxh-JT-qUc"/>
+                                <exclude reference="icM-J0-yxG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wjf-EH-vic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alarm-clock" width="256" height="256"/>
+    </resources>
+</document>

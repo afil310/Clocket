@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'Clocket_Example' do
-  pod 'Clocket', :path => '../'
+  pod 'Clocket'
 
   target 'Clocket_Tests' do
     inherit! :search_paths
