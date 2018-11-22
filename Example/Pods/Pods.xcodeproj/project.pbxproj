@@ -13,13 +13,13 @@
 		2A815BAC7E9A5FAE13380D648C6C0E6E /* Pods-Clocket_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F259C4707F4C106EFD00DFC41BC2FB8A /* Pods-Clocket_Example-dummy.m */; };
 		54A73DCAED0FC2417B91A2DA5781C9D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */; };
 		5C03F31E6C8DDA92F6E3D9C3199BF515 /* Pods-Clocket_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 219AD2B81907FD793A0575548372473A /* Pods-Clocket_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66E309609C0C03DA4C1A90827ADD81EF /* Clocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA2C884C49A624FDE4623F0FD99DC91 /* Clocket.swift */; };
-		94891B7EDEB3B1F963C624B6F6910647 /* Clocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3BC9BC68C95ACA16F68BD826C190CED /* Clocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E1CEF5699C7D9E13AF9933DF74B7082 /* Clocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B76FFA1A5F8054531AA428F615E34D /* Clocket-dummy.m */; };
+		66E309609C0C03DA4C1A90827ADD81EF /* Clocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1187C7B052813CA2A10900E0A79380 /* Clocket.swift */; };
+		94891B7EDEB3B1F963C624B6F6910647 /* Clocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D61A2F1045CFF946C47FEEC6A9BBFC5 /* Clocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E1CEF5699C7D9E13AF9933DF74B7082 /* Clocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D34A0243830A409D484FB642862E4A /* Clocket-dummy.m */; };
 		A38746A17EE53E826D9F60C1E7F32848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */; };
 		B170D86B8CCAD7368550A2FC9EA0FB8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA12E98CA9F3F0E6B3E8B17E0B954C58 /* UIKit.framework */; };
-		D65D0466DFD701C0C088B7BB385E2BCA /* ClockFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC99D727643287B97728A7F52CAB3E4 /* ClockFace.swift */; };
-		D794EFAF07EC0D6A6ED670B46C5D4986 /* ClockHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B117D0B7A1FEB4DC5F918AC505DFFD2 /* ClockHand.swift */; };
+		D65D0466DFD701C0C088B7BB385E2BCA /* ClockFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C002B223A1DEB3F16321255F56E15CC2 /* ClockFace.swift */; };
+		D794EFAF07EC0D6A6ED670B46C5D4986 /* ClockHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49BAB644CE08EB8B8BD4DA47001481 /* ClockHand.swift */; };
 		FD5A62AA3B413FD0E3EAFCAD9356F614 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEE77C30CADE29D0363F1A36F5E98E4 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,45 +41,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02D34A0243830A409D484FB642862E4A /* Clocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Clocket-dummy.m"; sourceTree = "<group>"; };
 		0FE24290D44A2105573BCA2D81EADA3D /* Pods-Clocket_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clocket_Tests-resources.sh"; sourceTree = "<group>"; };
 		1475DE13A5E31F547E9795AB648AEFCA /* Pods-Clocket_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clocket_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1772376E465ABB329E3502386648E489 /* Pods-Clocket_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Clocket_Example.modulemap"; sourceTree = "<group>"; };
-		17B76FFA1A5F8054531AA428F615E34D /* Clocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Clocket-dummy.m"; sourceTree = "<group>"; };
-		17BE31F60B74DA860766025C2653E1A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BA2CC32D8DCD6E1771EBD1C73F72A65 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1BCC5244E3176F447581296FD9175EAA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1D61A2F1045CFF946C47FEEC6A9BBFC5 /* Clocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Clocket-umbrella.h"; sourceTree = "<group>"; };
+		1E1187C7B052813CA2A10900E0A79380 /* Clocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Clocket.swift; path = Clocket/Classes/Clocket.swift; sourceTree = "<group>"; };
 		219AD2B81907FD793A0575548372473A /* Pods-Clocket_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clocket_Tests-umbrella.h"; sourceTree = "<group>"; };
 		283B8BBD3D570341249365181827F71F /* Pods-Clocket_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clocket_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		2851F47858B85EB4D5665AA6BD561181 /* Pods-Clocket_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clocket_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2B117D0B7A1FEB4DC5F918AC505DFFD2 /* ClockHand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClockHand.swift; path = Clocket/Classes/ClockHand.swift; sourceTree = "<group>"; };
-		3EA2C884C49A624FDE4623F0FD99DC91 /* Clocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Clocket.swift; path = Clocket/Classes/Clocket.swift; sourceTree = "<group>"; };
 		49EBD4131D09E61C19B46DCF59D33A36 /* Pods-Clocket_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clocket_Example-umbrella.h"; sourceTree = "<group>"; };
+		5D13A84FFBCEAAE744A034F68C0B4974 /* Clocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Clocket-prefix.pch"; sourceTree = "<group>"; };
+		6E4A488452CD31E2A2BF7C264402ECA4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FEE77C30CADE29D0363F1A36F5E98E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		76989D9DDD584045E82FFFF5BA2B9D0F /* Pods_Clocket_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clocket_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76989D9DDD584045E82FFFF5BA2B9D0F /* Pods_Clocket_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Clocket_Tests.framework; path = "Pods-Clocket_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78403494F3A8C31B6685737893AEC8EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D7AC28A20D7ADF2FB4EED2E33349AB8 /* Pods-Clocket_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clocket_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		81D49D98730A15F0DCD4F77B0B67A145 /* Clocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Clocket.xcconfig; sourceTree = "<group>"; };
-		831BFC00D82CC38754356910C9C33DE7 /* Clocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Clocket-prefix.pch"; sourceTree = "<group>"; };
 		89601F258F61720601E41AE558775DE2 /* Pods-Clocket_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clocket_Example-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9637280B7977B22221CDF0304F32A34C /* Pods-Clocket_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clocket_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		996DBE565D31F530FB5357DEAEB49D17 /* Pods-Clocket_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Clocket_Tests.modulemap"; sourceTree = "<group>"; };
 		9BF7945A5C75C55A7A881A5BE05EE771 /* Pods-Clocket_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clocket_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AE48B5844D2E5AD319F9250BF388045E /* Pods-Clocket_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clocket_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AE5C3CC8D8730427E6288B617671D10D /* Clocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Clocket.modulemap; sourceTree = "<group>"; };
-		B3BC9BC68C95ACA16F68BD826C190CED /* Clocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Clocket-umbrella.h"; sourceTree = "<group>"; };
+		BC49BAB644CE08EB8B8BD4DA47001481 /* ClockHand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClockHand.swift; path = Clocket/Classes/ClockHand.swift; sourceTree = "<group>"; };
+		C002B223A1DEB3F16321255F56E15CC2 /* ClockFace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClockFace.swift; path = Clocket/Classes/ClockFace.swift; sourceTree = "<group>"; };
 		C5FE335E57AFB8C70011BB5B9890BAFF /* Pods-Clocket_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clocket_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C6010BA6B3DED960425DB95C2269E6D4 /* Clocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Clocket.xcconfig; sourceTree = "<group>"; };
+		C6DFAD949EAB4C084F349209808D0965 /* Clocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Clocket.modulemap; sourceTree = "<group>"; };
 		C83467B4985C37AAD32CFED6E3693B2F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAF02C749CBB6F814790B2808BF228A0 /* Clocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Clocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFC99D727643287B97728A7F52CAB3E4 /* ClockFace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClockFace.swift; path = Clocket/Classes/ClockFace.swift; sourceTree = "<group>"; };
-		D725C6C25F3B38B3746780FD16E9A9E3 /* Pods_Clocket_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clocket_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF02C749CBB6F814790B2808BF228A0 /* Clocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Clocket.framework; path = Clocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D725C6C25F3B38B3746780FD16E9A9E3 /* Pods_Clocket_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Clocket_Example.framework; path = "Pods-Clocket_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7202407BB801C4569066AE07A7E17C2 /* Pods-Clocket_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clocket_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EA12E98CA9F3F0E6B3E8B17E0B954C58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EEA201CCD89E71178437FD0993242F66 /* Pods-Clocket_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clocket_Tests-dummy.m"; sourceTree = "<group>"; };
 		F259C4707F4C106EFD00DFC41BC2FB8A /* Pods-Clocket_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clocket_Example-dummy.m"; sourceTree = "<group>"; };
 		F29FDCF4D881B2B7A50D64B4E982CF3E /* Pods-Clocket_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clocket_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		FD8FC6E1480C5BEE01F5F4A60DAF0784 /* Clocket.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Clocket.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,16 +109,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08CF38ADBD0D44CB01DE8DB06EB4AA6F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				FD8FC6E1480C5BEE01F5F4A60DAF0784 /* Clocket.podspec */,
-				1BCC5244E3176F447581296FD9175EAA /* LICENSE */,
-				1BA2CC32D8DCD6E1771EBD1C73F72A65 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		0CEF6AE21748EEF05BDF013C1F96152B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,26 +145,12 @@
 			path = "Target Support Files/Pods-Clocket_Tests";
 			sourceTree = "<group>";
 		};
-		5A3799A20B78CC88EF003D185CF226B5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AE5C3CC8D8730427E6288B617671D10D /* Clocket.modulemap */,
-				81D49D98730A15F0DCD4F77B0B67A145 /* Clocket.xcconfig */,
-				17B76FFA1A5F8054531AA428F615E34D /* Clocket-dummy.m */,
-				831BFC00D82CC38754356910C9C33DE7 /* Clocket-prefix.pch */,
-				B3BC9BC68C95ACA16F68BD826C190CED /* Clocket-umbrella.h */,
-				17BE31F60B74DA860766025C2653E1A2 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Clocket";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				D51D71FC85DDE486AEF822C55FF7BDDF /* Development Pods */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				86DFAFBC7889F1F02D18C2437D891C22 /* Pods */,
 				8027C3FC80FC7043891D4E2656C82AA3 /* Products */,
 				D76A0B9E47638A166997D9E63B92A1D4 /* Targets Support Files */,
 			);
@@ -191,6 +164,14 @@
 				76989D9DDD584045E82FFFF5BA2B9D0F /* Pods_Clocket_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		86DFAFBC7889F1F02D18C2437D891C22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94DCB4AB66F6F4BBDAEDF9964E231983 /* Clocket */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		8ADFE17B22B7895E1463C35583DDFB18 /* Pods-Clocket_Example */ = {
@@ -211,25 +192,30 @@
 			path = "Target Support Files/Pods-Clocket_Example";
 			sourceTree = "<group>";
 		};
-		B667A647BED185A2AF125D92C87A4816 /* Clocket */ = {
+		94DCB4AB66F6F4BBDAEDF9964E231983 /* Clocket */ = {
 			isa = PBXGroup;
 			children = (
-				3EA2C884C49A624FDE4623F0FD99DC91 /* Clocket.swift */,
-				CFC99D727643287B97728A7F52CAB3E4 /* ClockFace.swift */,
-				2B117D0B7A1FEB4DC5F918AC505DFFD2 /* ClockHand.swift */,
-				08CF38ADBD0D44CB01DE8DB06EB4AA6F /* Pod */,
-				5A3799A20B78CC88EF003D185CF226B5 /* Support Files */,
+				1E1187C7B052813CA2A10900E0A79380 /* Clocket.swift */,
+				C002B223A1DEB3F16321255F56E15CC2 /* ClockFace.swift */,
+				BC49BAB644CE08EB8B8BD4DA47001481 /* ClockHand.swift */,
+				C9800AC9202A62FDC18CE32712601AD5 /* Support Files */,
 			);
 			name = Clocket;
-			path = /Users/andrey/Documents/Development/iOS_projects/Clocket;
-			sourceTree = "<absolute>";
+			path = Clocket;
+			sourceTree = "<group>";
 		};
-		D51D71FC85DDE486AEF822C55FF7BDDF /* Development Pods */ = {
+		C9800AC9202A62FDC18CE32712601AD5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B667A647BED185A2AF125D92C87A4816 /* Clocket */,
+				C6DFAD949EAB4C084F349209808D0965 /* Clocket.modulemap */,
+				C6010BA6B3DED960425DB95C2269E6D4 /* Clocket.xcconfig */,
+				02D34A0243830A409D484FB642862E4A /* Clocket-dummy.m */,
+				5D13A84FFBCEAAE744A034F68C0B4974 /* Clocket-prefix.pch */,
+				1D61A2F1045CFF946C47FEEC6A9BBFC5 /* Clocket-umbrella.h */,
+				6E4A488452CD31E2A2BF7C264402ECA4 /* Info.plist */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "../Target Support Files/Clocket";
 			sourceTree = "<group>";
 		};
 		D76A0B9E47638A166997D9E63B92A1D4 /* Targets Support Files */ = {
@@ -334,7 +320,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -560,7 +546,7 @@
 		};
 		A9C51CEE56C74A0E94C93E2BAB841401 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81D49D98730A15F0DCD4F77B0B67A145 /* Clocket.xcconfig */;
+			baseConfigurationReference = C6010BA6B3DED960425DB95C2269E6D4 /* Clocket.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -619,7 +605,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -682,14 +669,13 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
 		BDFC3B3B05071E78E041E59E006E2F32 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81D49D98730A15F0DCD4F77B0B67A145 /* Clocket.xcconfig */;
+			baseConfigurationReference = C6010BA6B3DED960425DB95C2269E6D4 /* Clocket.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -712,7 +698,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
