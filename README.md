@@ -1,10 +1,10 @@
 # Clocket
 
-[![CI Status](https://img.shields.io/travis/afil310/Clocket.svg?style=flat)](https://travis-ci.org/afil310/Clocket) [![Version](https://img.shields.io/cocoapods/v/Clocket.svg?style=flat)](https://cocoapods.org/pods/Clocket) [![License](https://img.shields.io/cocoapods/l/Clocket.svg?style=flat)](https://cocoapods.org/pods/Clocket) [![Platform](https://img.shields.io/cocoapods/p/Clocket.svg?style=flat)](https://cocoapods.org/pods/Clocket)
+[![Swift 4.2](https://img.shields.io/badge/swift-4.2-orange.svg)](https://developer.apple.com/swift/) [![Platform](https://img.shields.io/badge/platform-iOS-brightgreen.svg)](https://cocoapods.org/pods/Clocket) [![CI Status](https://api.travis-ci.org/afil310/Clocket.svg)](https://travis-ci.org/afil310/Clocket) [![Version](https://img.shields.io/cocoapods/v/Clocket.svg?style=flat)](https://cocoapods.org/pods/Clocket) [![License](https://img.shields.io/badge/licence-MIT-blue.svg)](https://cocoapods.org/pods/Clocket)
 
 ## Description
-`Clocket` is an iOS framework that makes it easy to create and customize clock views. 
-<p align="center"><img src ="/Example/Screenshots/Clocket iPhone XR.png" width="300px"/> <img src ="/Example/Screenshots/Clocket demo.gif" width="300px"/></p>
+`Clocket` is an iOS framework written in Swift 4.2 that makes it easy to create and customize clock views. 
+<p align="center"><img src ="https://raw.githubusercontent.com/afil310/Clocket/master/Example/Screenshots/Clocket%20iPhone%20XR.png" width="300px"/> <img src ="https://raw.githubusercontent.com/afil310/Clocket/master/Example/Screenshots/Clocket%20demo.gif" width="300px"/></p>
 
 ## Features
 - Real time or custom time clock
@@ -38,7 +38,7 @@ target 'MyApp' do
   pod 'Clocket'
 end
 ```
-3. Run `pod install` in your project directory:
+3. Run `pod install` in the project directory:
 ```ruby
 $ cd <path/to/your/project/directory>
 $ pod install
