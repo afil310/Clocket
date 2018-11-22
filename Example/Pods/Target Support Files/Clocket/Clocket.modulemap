@@ -1,0 +1,6 @@
+framework module Clocket {
+  umbrella header "Clocket-umbrella.h"
+
+  export *
+  module * { export * }
+}

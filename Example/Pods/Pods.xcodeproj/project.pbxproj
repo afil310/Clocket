@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03DD0804D879BDD549B813953DCB1AFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */; };
+		1383941E64AA88DB4CAB6BE6A6C6A182 /* Pods-Clocket_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49EBD4131D09E61C19B46DCF59D33A36 /* Pods-Clocket_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DE7ED09EE108DAC639E5296D255588B /* Pods-Clocket_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA201CCD89E71178437FD0993242F66 /* Pods-Clocket_Tests-dummy.m */; };
+		2A815BAC7E9A5FAE13380D648C6C0E6E /* Pods-Clocket_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F259C4707F4C106EFD00DFC41BC2FB8A /* Pods-Clocket_Example-dummy.m */; };
+		54A73DCAED0FC2417B91A2DA5781C9D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */; };
+		5C03F31E6C8DDA92F6E3D9C3199BF515 /* Pods-Clocket_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 219AD2B81907FD793A0575548372473A /* Pods-Clocket_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E309609C0C03DA4C1A90827ADD81EF /* Clocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA2C884C49A624FDE4623F0FD99DC91 /* Clocket.swift */; };
+		94891B7EDEB3B1F963C624B6F6910647 /* Clocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3BC9BC68C95ACA16F68BD826C190CED /* Clocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E1CEF5699C7D9E13AF9933DF74B7082 /* Clocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B76FFA1A5F8054531AA428F615E34D /* Clocket-dummy.m */; };
+		A38746A17EE53E826D9F60C1E7F32848 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */; };
+		B170D86B8CCAD7368550A2FC9EA0FB8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA12E98CA9F3F0E6B3E8B17E0B954C58 /* UIKit.framework */; };
+		D65D0466DFD701C0C088B7BB385E2BCA /* ClockFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC99D727643287B97728A7F52CAB3E4 /* ClockFace.swift */; };
+		D794EFAF07EC0D6A6ED670B46C5D4986 /* ClockHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B117D0B7A1FEB4DC5F918AC505DFFD2 /* ClockHand.swift */; };
+		FD5A62AA3B413FD0E3EAFCAD9356F614 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEE77C30CADE29D0363F1A36F5E98E4 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D95721153FC46A75C9CD55CE3301950 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87060F113E527C90B66C10726F2715CB;
+			remoteInfo = "Pods-Clocket_Example";
+		};
+		591AAF6836B17FB02F59F0E5560A1D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C22CB0E8CB2E8FC32BDB1262C9D1741;
+			remoteInfo = Clocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FE24290D44A2105573BCA2D81EADA3D /* Pods-Clocket_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clocket_Tests-resources.sh"; sourceTree = "<group>"; };
+		1475DE13A5E31F547E9795AB648AEFCA /* Pods-Clocket_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clocket_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1772376E465ABB329E3502386648E489 /* Pods-Clocket_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Clocket_Example.modulemap"; sourceTree = "<group>"; };
+		17B76FFA1A5F8054531AA428F615E34D /* Clocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Clocket-dummy.m"; sourceTree = "<group>"; };
+		17BE31F60B74DA860766025C2653E1A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA2CC32D8DCD6E1771EBD1C73F72A65 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1BCC5244E3176F447581296FD9175EAA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		219AD2B81907FD793A0575548372473A /* Pods-Clocket_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clocket_Tests-umbrella.h"; sourceTree = "<group>"; };
+		283B8BBD3D570341249365181827F71F /* Pods-Clocket_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clocket_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		2851F47858B85EB4D5665AA6BD561181 /* Pods-Clocket_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clocket_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2B117D0B7A1FEB4DC5F918AC505DFFD2 /* ClockHand.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClockHand.swift; path = Clocket/Classes/ClockHand.swift; sourceTree = "<group>"; };
+		3EA2C884C49A624FDE4623F0FD99DC91 /* Clocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Clocket.swift; path = Clocket/Classes/Clocket.swift; sourceTree = "<group>"; };
+		49EBD4131D09E61C19B46DCF59D33A36 /* Pods-Clocket_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clocket_Example-umbrella.h"; sourceTree = "<group>"; };
+		6FEE77C30CADE29D0363F1A36F5E98E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		76989D9DDD584045E82FFFF5BA2B9D0F /* Pods_Clocket_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clocket_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78403494F3A8C31B6685737893AEC8EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D7AC28A20D7ADF2FB4EED2E33349AB8 /* Pods-Clocket_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clocket_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		81D49D98730A15F0DCD4F77B0B67A145 /* Clocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Clocket.xcconfig; sourceTree = "<group>"; };
+		831BFC00D82CC38754356910C9C33DE7 /* Clocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Clocket-prefix.pch"; sourceTree = "<group>"; };
+		89601F258F61720601E41AE558775DE2 /* Pods-Clocket_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clocket_Example-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9637280B7977B22221CDF0304F32A34C /* Pods-Clocket_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clocket_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		996DBE565D31F530FB5357DEAEB49D17 /* Pods-Clocket_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Clocket_Tests.modulemap"; sourceTree = "<group>"; };
+		9BF7945A5C75C55A7A881A5BE05EE771 /* Pods-Clocket_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clocket_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE48B5844D2E5AD319F9250BF388045E /* Pods-Clocket_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clocket_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		AE5C3CC8D8730427E6288B617671D10D /* Clocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Clocket.modulemap; sourceTree = "<group>"; };
+		B3BC9BC68C95ACA16F68BD826C190CED /* Clocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Clocket-umbrella.h"; sourceTree = "<group>"; };
+		C5FE335E57AFB8C70011BB5B9890BAFF /* Pods-Clocket_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clocket_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C83467B4985C37AAD32CFED6E3693B2F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAF02C749CBB6F814790B2808BF228A0 /* Clocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Clocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC99D727643287B97728A7F52CAB3E4 /* ClockFace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClockFace.swift; path = Clocket/Classes/ClockFace.swift; sourceTree = "<group>"; };
+		D725C6C25F3B38B3746780FD16E9A9E3 /* Pods_Clocket_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clocket_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7202407BB801C4569066AE07A7E17C2 /* Pods-Clocket_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clocket_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EA12E98CA9F3F0E6B3E8B17E0B954C58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EEA201CCD89E71178437FD0993242F66 /* Pods-Clocket_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clocket_Tests-dummy.m"; sourceTree = "<group>"; };
+		F259C4707F4C106EFD00DFC41BC2FB8A /* Pods-Clocket_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clocket_Example-dummy.m"; sourceTree = "<group>"; };
+		F29FDCF4D881B2B7A50D64B4E982CF3E /* Pods-Clocket_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clocket_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FD8FC6E1480C5BEE01F5F4A60DAF0784 /* Clocket.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = Clocket.podspec; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AEA7AD20C5FD588F73B68878D11D06F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5A62AA3B413FD0E3EAFCAD9356F614 /* AVFoundation.framework in Frameworks */,
+				54A73DCAED0FC2417B91A2DA5781C9D5 /* Foundation.framework in Frameworks */,
+				B170D86B8CCAD7368550A2FC9EA0FB8D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AD7D0E9C7B825B18AD97BD35DD5FF93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38746A17EE53E826D9F60C1E7F32848 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B996C99347B9E69F8FF8600277081B3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DD0804D879BDD549B813953DCB1AFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08CF38ADBD0D44CB01DE8DB06EB4AA6F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FD8FC6E1480C5BEE01F5F4A60DAF0784 /* Clocket.podspec */,
+				1BCC5244E3176F447581296FD9175EAA /* LICENSE */,
+				1BA2CC32D8DCD6E1771EBD1C73F72A65 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		0CEF6AE21748EEF05BDF013C1F96152B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6FEE77C30CADE29D0363F1A36F5E98E4 /* AVFoundation.framework */,
+				F2BF5E9D68EAC528D8EBCD934CA1A933 /* Foundation.framework */,
+				EA12E98CA9F3F0E6B3E8B17E0B954C58 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CEF6AE21748EEF05BDF013C1F96152B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14F23D9628AFAAABBF953ABC28D55AD4 /* Pods-Clocket_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C83467B4985C37AAD32CFED6E3693B2F /* Info.plist */,
+				996DBE565D31F530FB5357DEAEB49D17 /* Pods-Clocket_Tests.modulemap */,
+				1475DE13A5E31F547E9795AB648AEFCA /* Pods-Clocket_Tests-acknowledgements.markdown */,
+				C5FE335E57AFB8C70011BB5B9890BAFF /* Pods-Clocket_Tests-acknowledgements.plist */,
+				EEA201CCD89E71178437FD0993242F66 /* Pods-Clocket_Tests-dummy.m */,
+				283B8BBD3D570341249365181827F71F /* Pods-Clocket_Tests-frameworks.sh */,
+				0FE24290D44A2105573BCA2D81EADA3D /* Pods-Clocket_Tests-resources.sh */,
+				219AD2B81907FD793A0575548372473A /* Pods-Clocket_Tests-umbrella.h */,
+				9BF7945A5C75C55A7A881A5BE05EE771 /* Pods-Clocket_Tests.debug.xcconfig */,
+				9637280B7977B22221CDF0304F32A34C /* Pods-Clocket_Tests.release.xcconfig */,
+			);
+			name = "Pods-Clocket_Tests";
+			path = "Target Support Files/Pods-Clocket_Tests";
+			sourceTree = "<group>";
+		};
+		5A3799A20B78CC88EF003D185CF226B5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE5C3CC8D8730427E6288B617671D10D /* Clocket.modulemap */,
+				81D49D98730A15F0DCD4F77B0B67A145 /* Clocket.xcconfig */,
+				17B76FFA1A5F8054531AA428F615E34D /* Clocket-dummy.m */,
+				831BFC00D82CC38754356910C9C33DE7 /* Clocket-prefix.pch */,
+				B3BC9BC68C95ACA16F68BD826C190CED /* Clocket-umbrella.h */,
+				17BE31F60B74DA860766025C2653E1A2 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Clocket";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D51D71FC85DDE486AEF822C55FF7BDDF /* Development Pods */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				8027C3FC80FC7043891D4E2656C82AA3 /* Products */,
+				D76A0B9E47638A166997D9E63B92A1D4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8027C3FC80FC7043891D4E2656C82AA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAF02C749CBB6F814790B2808BF228A0 /* Clocket.framework */,
+				D725C6C25F3B38B3746780FD16E9A9E3 /* Pods_Clocket_Example.framework */,
+				76989D9DDD584045E82FFFF5BA2B9D0F /* Pods_Clocket_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ADFE17B22B7895E1463C35583DDFB18 /* Pods-Clocket_Example */ = {
+			isa = PBXGroup;
+			children = (
+				78403494F3A8C31B6685737893AEC8EB /* Info.plist */,
+				1772376E465ABB329E3502386648E489 /* Pods-Clocket_Example.modulemap */,
+				2851F47858B85EB4D5665AA6BD561181 /* Pods-Clocket_Example-acknowledgements.markdown */,
+				7D7AC28A20D7ADF2FB4EED2E33349AB8 /* Pods-Clocket_Example-acknowledgements.plist */,
+				F259C4707F4C106EFD00DFC41BC2FB8A /* Pods-Clocket_Example-dummy.m */,
+				F29FDCF4D881B2B7A50D64B4E982CF3E /* Pods-Clocket_Example-frameworks.sh */,
+				89601F258F61720601E41AE558775DE2 /* Pods-Clocket_Example-resources.sh */,
+				49EBD4131D09E61C19B46DCF59D33A36 /* Pods-Clocket_Example-umbrella.h */,
+				AE48B5844D2E5AD319F9250BF388045E /* Pods-Clocket_Example.debug.xcconfig */,
+				E7202407BB801C4569066AE07A7E17C2 /* Pods-Clocket_Example.release.xcconfig */,
+			);
+			name = "Pods-Clocket_Example";
+			path = "Target Support Files/Pods-Clocket_Example";
+			sourceTree = "<group>";
+		};
+		B667A647BED185A2AF125D92C87A4816 /* Clocket */ = {
+			isa = PBXGroup;
+			children = (
+				3EA2C884C49A624FDE4623F0FD99DC91 /* Clocket.swift */,
+				CFC99D727643287B97728A7F52CAB3E4 /* ClockFace.swift */,
+				2B117D0B7A1FEB4DC5F918AC505DFFD2 /* ClockHand.swift */,
+				08CF38ADBD0D44CB01DE8DB06EB4AA6F /* Pod */,
+				5A3799A20B78CC88EF003D185CF226B5 /* Support Files */,
+			);
+			name = Clocket;
+			path = /Users/andrey/Documents/Development/iOS_projects/Clocket;
+			sourceTree = "<absolute>";
+		};
+		D51D71FC85DDE486AEF822C55FF7BDDF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B667A647BED185A2AF125D92C87A4816 /* Clocket */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D76A0B9E47638A166997D9E63B92A1D4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ADFE17B22B7895E1463C35583DDFB18 /* Pods-Clocket_Example */,
+				14F23D9628AFAAABBF953ABC28D55AD4 /* Pods-Clocket_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4E7563F970FACE33FEAEAD8F4B7F9694 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C03F31E6C8DDA92F6E3D9C3199BF515 /* Pods-Clocket_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729C23CE680292003FD51C44A2069186 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94891B7EDEB3B1F963C624B6F6910647 /* Clocket-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE076608F44F4BA506D0D4696C9E272D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1383941E64AA88DB4CAB6BE6A6C6A182 /* Pods-Clocket_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3C22CB0E8CB2E8FC32BDB1262C9D1741 /* Clocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9212B0A4F9520EC8CE5F91AA2637B68 /* Build configuration list for PBXNativeTarget "Clocket" */;
+			buildPhases = (
+				729C23CE680292003FD51C44A2069186 /* Headers */,
+				75804E9F4A73E5FF740EE73722F5FEDD /* Sources */,
+				4AEA7AD20C5FD588F73B68878D11D06F /* Frameworks */,
+				D000F968BF1F2128F5DB8DE288E2C96E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clocket;
+			productName = Clocket;
+			productReference = CAF02C749CBB6F814790B2808BF228A0 /* Clocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87060F113E527C90B66C10726F2715CB /* Pods-Clocket_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2995134E895F2EAC54154DBB1B9B3C2C /* Build configuration list for PBXNativeTarget "Pods-Clocket_Example" */;
+			buildPhases = (
+				DE076608F44F4BA506D0D4696C9E272D /* Headers */,
+				3B9482C694C1377654FBF931388EB73D /* Sources */,
+				7AD7D0E9C7B825B18AD97BD35DD5FF93 /* Frameworks */,
+				22F1A790435BD0DDA9F45CD26D581529 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93037C79A76F4680EA48CDEF738A3D86 /* PBXTargetDependency */,
+			);
+			name = "Pods-Clocket_Example";
+			productName = "Pods-Clocket_Example";
+			productReference = D725C6C25F3B38B3746780FD16E9A9E3 /* Pods_Clocket_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F40AAFC928EDAD43D4BAD1C057B82AEA /* Pods-Clocket_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EF2223FE395BAF0187DB7DA0AB768C5 /* Build configuration list for PBXNativeTarget "Pods-Clocket_Tests" */;
+			buildPhases = (
+				4E7563F970FACE33FEAEAD8F4B7F9694 /* Headers */,
+				ABDA992225BB4E1B4916E51275F85CB3 /* Sources */,
+				B996C99347B9E69F8FF8600277081B3C /* Frameworks */,
+				D1379A610B805A7248D1A6EB655A3490 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E20FA00DB7E9D01988A8B6AD7BC281F7 /* PBXTargetDependency */,
+			);
+			name = "Pods-Clocket_Tests";
+			productName = "Pods-Clocket_Tests";
+			productReference = 76989D9DDD584045E82FFFF5BA2B9D0F /* Pods_Clocket_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1000;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8027C3FC80FC7043891D4E2656C82AA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C22CB0E8CB2E8FC32BDB1262C9D1741 /* Clocket */,
+				87060F113E527C90B66C10726F2715CB /* Pods-Clocket_Example */,
+				F40AAFC928EDAD43D4BAD1C057B82AEA /* Pods-Clocket_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22F1A790435BD0DDA9F45CD26D581529 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D000F968BF1F2128F5DB8DE288E2C96E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1379A610B805A7248D1A6EB655A3490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B9482C694C1377654FBF931388EB73D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A815BAC7E9A5FAE13380D648C6C0E6E /* Pods-Clocket_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75804E9F4A73E5FF740EE73722F5FEDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E1CEF5699C7D9E13AF9933DF74B7082 /* Clocket-dummy.m in Sources */,
+				66E309609C0C03DA4C1A90827ADD81EF /* Clocket.swift in Sources */,
+				D65D0466DFD701C0C088B7BB385E2BCA /* ClockFace.swift in Sources */,
+				D794EFAF07EC0D6A6ED670B46C5D4986 /* ClockHand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDA992225BB4E1B4916E51275F85CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DE7ED09EE108DAC639E5296D255588B /* Pods-Clocket_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93037C79A76F4680EA48CDEF738A3D86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Clocket;
+			target = 3C22CB0E8CB2E8FC32BDB1262C9D1741 /* Clocket */;
+			targetProxy = 591AAF6836B17FB02F59F0E5560A1D29 /* PBXContainerItemProxy */;
+		};
+		E20FA00DB7E9D01988A8B6AD7BC281F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Clocket_Example";
+			target = 87060F113E527C90B66C10726F2715CB /* Pods-Clocket_Example */;
+			targetProxy = 2D95721153FC46A75C9CD55CE3301950 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6549E24781F989C2A7B6E52CF4EA403C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9637280B7977B22221CDF0304F32A34C /* Pods-Clocket_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Clocket_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clocket_Tests/Pods-Clocket_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7AC71A3005BAAFA1F4C02B666C93A79C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BF7945A5C75C55A7A881A5BE05EE771 /* Pods-Clocket_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Clocket_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clocket_Tests/Pods-Clocket_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A9C51CEE56C74A0E94C93E2BAB841401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D49D98730A15F0DCD4F77B0B67A145 /* Clocket.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Clocket/Clocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Clocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Clocket/Clocket.modulemap";
+				PRODUCT_MODULE_NAME = Clocket;
+				PRODUCT_NAME = Clocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B5105880A32EA60DE0186A7EEEE4325B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7202407BB801C4569066AE07A7E17C2 /* Pods-Clocket_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Clocket_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clocket_Example/Pods-Clocket_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BDFC3B3B05071E78E041E59E006E2F32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D49D98730A15F0DCD4F77B0B67A145 /* Clocket.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Clocket/Clocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Clocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Clocket/Clocket.modulemap";
+				PRODUCT_MODULE_NAME = Clocket;
+				PRODUCT_NAME = Clocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FCA36711B1F015EBD7FDB632C2D829B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE48B5844D2E5AD319F9250BF388045E /* Pods-Clocket_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Clocket_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clocket_Example/Pods-Clocket_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2995134E895F2EAC54154DBB1B9B3C2C /* Build configuration list for PBXNativeTarget "Pods-Clocket_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCA36711B1F015EBD7FDB632C2D829B7 /* Debug */,
+				B5105880A32EA60DE0186A7EEEE4325B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */,
+				B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EF2223FE395BAF0187DB7DA0AB768C5 /* Build configuration list for PBXNativeTarget "Pods-Clocket_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AC71A3005BAAFA1F4C02B666C93A79C /* Debug */,
+				6549E24781F989C2A7B6E52CF4EA403C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9212B0A4F9520EC8CE5F91AA2637B68 /* Build configuration list for PBXNativeTarget "Clocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C51CEE56C74A0E94C93E2BAB841401 /* Debug */,
+				BDFC3B3B05071E78E041E59E006E2F32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - Clocket (1.0.0)
+
+DEPENDENCIES:
+  - Clocket (from `~/Documents/Development/iOS_projects/Clocket`)
+
+EXTERNAL SOURCES:
+  Clocket:
+    :path: "~/Documents/Development/iOS_projects/Clocket"
+
+SPEC CHECKSUMS:
+  Clocket: 2d68a59287642a1c11161ddb2845c1a85d3ca1db
+
+PODFILE CHECKSUM: 42059425bd924c495c9f3ca5263420f18242a314
+
+COCOAPODS: 1.5.3
