@@ -1,17 +1,18 @@
 //
 //  ViewController.swift
-//  Clocket
+//  Clocket-development
 //
 //  Created by Andrey Filonov on 08/11/2018.
-//  Copyright © 2018 Andrey Filonov. All rights reserved.
+//  Copyright © 2019 Andrey Filonov. All rights reserved.
 //
+
 
 import UIKit
 import AVFoundation
 import Clocket
 
 
-class ViewController: UIViewController, ClocketDelegate {
+class ViewController: UIViewController {
     
     
     @IBOutlet weak var startButton: UIButton!
@@ -27,7 +28,7 @@ class ViewController: UIViewController, ClocketDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        clock.clockDelegate = self
+        clock.clocketDelegate = self
         setupView()
         setupClock()
     }
@@ -157,7 +158,10 @@ class ViewController: UIViewController, ClocketDelegate {
     @objc func manualTimeSetSwitchStateChanged(switchState: UISwitch) {
         clock.manualTimeSetAllowed = switchState.isOn
     }
-    
+}
+
+
+extension ViewController: ClocketDelegate {
     
     func timeIsSetManually() {
         clock.displayRealTime = false
@@ -185,4 +189,5 @@ class ViewController: UIViewController, ClocketDelegate {
         
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
     }
+    
 }
