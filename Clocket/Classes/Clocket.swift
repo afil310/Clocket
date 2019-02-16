@@ -9,7 +9,7 @@
 import UIKit
 
 
-open class Clocket: UIView, UIGestureRecognizerDelegate {
+open class Clocket: UIView {
     
     private let translateToRadian = Double.pi/180.0
     
@@ -27,9 +27,9 @@ open class Clocket: UIView, UIGestureRecognizerDelegate {
     open var secondHandCircleDiameter: CGFloat = 4.0
     
     open var handTailLength: CGFloat = 0.2
-    private var lineWidthCoefficient: CGFloat = 100.0
-    private var lineWidth: CGFloat { return diameter / lineWidthCoefficient }
+    private var lineWidthFactor: CGFloat = 100.0
     private var diameter: CGFloat { return min(bounds.width, bounds.height) }
+    private var lineWidth: CGFloat { return diameter / lineWidthFactor }
     
     @IBInspectable open var displayRealTime: Bool = false
     @IBInspectable open var reverseTime: Bool = false
@@ -53,7 +53,7 @@ open class Clocket: UIView, UIGestureRecognizerDelegate {
     private var secondHand = ClockHand()
     private var secondHandCircle = UIImageView()
     
-    weak open var clockDelegate: ClocketDelegate?
+    weak open var clocketDelegate: ClocketDelegate?
     
     
     public override init(frame: CGRect) {
@@ -152,10 +152,11 @@ open class Clocket: UIView, UIGestureRecognizerDelegate {
     private func setupGestures() {
         let tapRecognizer = UITapGestureRecognizer(target: self, action:#selector(handleTap(recognizer:)))
         tapRecognizer.delegate = self
-        self.addGestureRecognizer(tapRecognizer)
+        addGestureRecognizer(tapRecognizer)
+        
         let panRecognizer = UIPanGestureRecognizer(target: self, action:#selector(handlePan(recognizer:)))
         panRecognizer.delegate = self
-        self.addGestureRecognizer(panRecognizer)
+        addGestureRecognizer(panRecognizer)
     }
     
     
@@ -233,7 +234,7 @@ open class Clocket: UIView, UIGestureRecognizerDelegate {
     
     private func countDownTimerAlert() {
         //implement any alert actions here for the countDown timer expiring
-        clockDelegate?.countDownExpired()
+        clocketDelegate?.countDownExpired()
     }
     
     
@@ -242,9 +243,8 @@ open class Clocket: UIView, UIGestureRecognizerDelegate {
         switch recognizer.state {
         case .changed:
             handleTap(recognizer: recognizer)
-            break
         case .ended:
-            clockDelegate?.timeIsSetManually()
+            clocketDelegate?.timeIsSetManually()
         default:
             break
         }
@@ -269,7 +269,7 @@ open class Clocket: UIView, UIGestureRecognizerDelegate {
                 secondHand.updateHandAngle(angle: CGFloat(0.0), duration: 1.0)
             }
             localTime.second = 0
-            clockDelegate?.timeIsSetManually()
+            clocketDelegate?.timeIsSetManually()
             return
         }
         let handRadianAngle = Double(Float.pi - atan2f((Float(tapLocation.x - center.x)),
@@ -287,15 +287,18 @@ open class Clocket: UIView, UIGestureRecognizerDelegate {
             }
             localTime.minute = newMinuteValue
             
-            //tap or pan on the area of the clockface between the center and the edge to set the hour hand
+        //tap or pan on the area of the clockface between the center and the edge to set the hour hand
         } else if distanceToCenter / (viewSize/2) < hourHandLength {
             localTime.hour = Int(handRadianAngle * 6 / Double.pi)
         }
         let hourDegree = Double(localTime.hour) * 30.0 + Double(localTime.minute) * 0.5
         hourHand.updateHandAngle(angle: CGFloat(hourDegree * translateToRadian), duration: 0.5)
-        clockDelegate?.timeIsSetManually()
+        clocketDelegate?.timeIsSetManually()
     }
 }
+
+
+extension Clocket: UIGestureRecognizerDelegate {}
 
 
 public protocol ClocketDelegate: AnyObject {
