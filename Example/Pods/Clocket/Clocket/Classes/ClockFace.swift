@@ -14,10 +14,10 @@ class ClockFace: UIImageView {
     private var staticClockFaceImage: UIImage?
     private var diameter: CGFloat { return min(frame.width, frame.height) }
     
-    var lineWidthCoefficient = CGFloat(100.0)
+    var lineWidthFactor = CGFloat(100.0)
     
     lazy var lineWidth = {
-        return diameter / lineWidthCoefficient
+        return diameter / lineWidthFactor
     }()
     
     var lineColor = UIColor.black.cgColor

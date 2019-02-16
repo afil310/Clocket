@@ -1,5 +1,5 @@
 PODS:
-  - Clocket (1.0.0)
+  - Clocket (1.0.2)
 
 DEPENDENCIES:
   - Clocket
@@ -9,7 +9,7 @@ SPEC REPOS:
     - Clocket
 
 SPEC CHECKSUMS:
-  Clocket: 8ff7368db72afe6851dd79f9fad87fa464bc4361
+  Clocket: 096ae0fb73338019f32e9234799d3f5da85bf89d
 
 PODFILE CHECKSUM: e807590c20e7441a961330e3af30ec196fa5ddb3
 
