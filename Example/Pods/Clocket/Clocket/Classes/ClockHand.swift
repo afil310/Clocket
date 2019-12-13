@@ -19,7 +19,6 @@ struct ClockHandParameters {
     var initValue: Double
 }
 
-
 class ClockHand: UIImageView {
     
     convenience init(parameters: ClockHandParameters) {
@@ -55,7 +54,6 @@ class ClockHand: UIImageView {
         translatesAutoresizingMaskIntoConstraints = false
     }
     
-    
     func updateHandAngle(angle: CGFloat, duration: Double = 0.5) {
         UIView.animate(withDuration: duration,
                        delay: 0.0,
@@ -65,12 +63,9 @@ class ClockHand: UIImageView {
                         return
         })
     }
-    
 }
 
-
 class SecondHandCircle: UIImageView {
-    
     convenience init(radius: CGFloat, circleDiameter: CGFloat, lineWidth: CGFloat, color: UIColor) {
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: radius * 2, height: radius * 2))
         let circle: UIImage = renderer.image { (ctx) in

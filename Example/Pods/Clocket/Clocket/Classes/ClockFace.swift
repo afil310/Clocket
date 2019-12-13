@@ -45,18 +45,15 @@ class ClockFace: UIImageView {
     var logoFontCoefficient = CGFloat(20.0)
     var logoFont: UIFont { return UIFont(name: logoFontName, size: diameter/logoFontCoefficient)! }
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
     
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
-    
     
     convenience init(frame: CGRect, staticClockFaceImage: UIImage?) {
         self.init(frame: frame)
@@ -64,12 +61,10 @@ class ClockFace: UIImageView {
         setup()
     }
     
-    
     func setup() {
         image = staticClockFaceImage ?? drawClockFace()
         translatesAutoresizingMaskIntoConstraints = false
     }
-    
     
     func drawClockFace() -> UIImage {
         let perimeter = drawPerimeter()
@@ -86,7 +81,6 @@ class ClockFace: UIImageView {
         }
     }
     
-    
     func drawPerimeter() -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: diameter, height: diameter))
         return renderer.image { (ctx) in
@@ -98,7 +92,6 @@ class ClockFace: UIImageView {
             ctx.cgContext.drawPath(using: .fillStroke)
         }
     }
-    
     
     func drawMarks() -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: diameter, height: diameter))
@@ -124,7 +117,6 @@ class ClockFace: UIImageView {
             }
         }
     }
-    
     
     func drawDigits() -> UIImage {
         if !enableDigits {return UIImage()}
@@ -154,7 +146,6 @@ class ClockFace: UIImageView {
             }
         }
     }
-    
     
     func drawLogo() -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: diameter, height: diameter))

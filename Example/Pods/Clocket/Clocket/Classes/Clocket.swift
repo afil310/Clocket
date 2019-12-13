@@ -55,18 +55,15 @@ open class Clocket: UIView {
     
     weak open var clocketDelegate: ClocketDelegate?
     
-    
     public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
     
-    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
-    
     
     private func setup() {
         backgroundColor = UIColor.clear
@@ -75,7 +72,6 @@ open class Clocket: UIView {
         setupClockFace()
         setupGestures()
     }
-    
     
     private func setupHands() {
         let hourHandParameters = ClockHandParameters(frame: frame,
@@ -110,7 +106,6 @@ open class Clocket: UIView {
                                             lineWidth: lineWidth,
                                             color: secondHandColor)
     }
-    
     
     private func setupClockFace() {
         clockFace = ClockFace(frame: frame)
@@ -148,7 +143,6 @@ open class Clocket: UIView {
         secondHand.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor).isActive = true
     }
     
-    
     private func setupGestures() {
         let tapRecognizer = UITapGestureRecognizer(target: self, action:#selector(handleTap(recognizer:)))
         tapRecognizer.delegate = self
@@ -159,14 +153,12 @@ open class Clocket: UIView {
         addGestureRecognizer(panRecognizer)
     }
     
-    
     open func setLocalTime(hour: Int, minute: Int, second: Int) {
         localTime.hour = hour % 12
         localTime.minute = minute % 60
         localTime.second = second % 60
         updateHands()
     }
-    
     
     open func startClock() {
         if timer.isValid {
@@ -182,13 +174,12 @@ open class Clocket: UIView {
         timer = Timer.scheduledTimer(timeInterval: refreshInterval, target: self, selector: #selector(tick), userInfo: nil, repeats: true)
     }
     
-    
     open func stopClock() {
         timer.invalidate()
     }
     
-    
-    @objc private func tick() {
+    @objc
+    private func tick() {
         if displayRealTime {
             let localTimeComponents: Set<Calendar.Component> = [.hour, .minute, .second]
             let realTimeComponents = Calendar.current.dateComponents(localTimeComponents, from: Date())
@@ -223,7 +214,6 @@ open class Clocket: UIView {
         updateHands()
     }
     
-    
     private func updateHands() {
         secondHand.updateHandAngle(angle: CGFloat(Double(localTime.second * 6) * translateToRadian))
         minuteHand.updateHandAngle(angle: CGFloat(Double(localTime.minute * 6) * translateToRadian))
@@ -231,14 +221,13 @@ open class Clocket: UIView {
         hourHand.updateHandAngle(angle: CGFloat(hourDegree * translateToRadian))
     }
     
-    
     private func countDownTimerAlert() {
         //implement any alert actions here for the countDown timer expiring
         clocketDelegate?.countDownExpired()
     }
     
-    
-    @objc private func handlePan(recognizer: UIPanGestureRecognizer) {
+    @objc
+    private func handlePan(recognizer: UIPanGestureRecognizer) {
         if !manualTimeSetAllowed {return}
         switch recognizer.state {
         case .changed:
@@ -250,8 +239,8 @@ open class Clocket: UIView {
         }
     }
     
-    
-    @objc private func handleTap(recognizer: UIPanGestureRecognizer){
+    @objc
+    private func handleTap(recognizer: UIPanGestureRecognizer){
         if !manualTimeSetAllowed {return}
         let tapLocation = recognizer.location(in: self)
         guard let view = recognizer.view else { return }
@@ -297,15 +286,11 @@ open class Clocket: UIView {
     }
 }
 
-
-extension Clocket: UIGestureRecognizerDelegate {}
-
+extension Clocket: UIGestureRecognizerDelegate { }
 
 public protocol ClocketDelegate: AnyObject {
     
     func timeIsSetManually()
-    
-    func clockStopped()
-    
     func countDownExpired()
+    func clockStopped()
 }
