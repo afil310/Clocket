@@ -6,7 +6,6 @@ target 'Clocket_Example' do
 
   target 'Clocket_Tests' do
     inherit! :search_paths
-
     
   end
 end
