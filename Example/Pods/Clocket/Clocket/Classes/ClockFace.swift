@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class ClockFace: UIImageView {
     
     private var staticClockFaceImage: UIImage?

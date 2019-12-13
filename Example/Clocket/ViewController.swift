@@ -11,9 +11,7 @@ import UIKit
 import AVFoundation
 import Clocket
 
-
 class ViewController: UIViewController {
-    
     
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var timeRateLabel: UILabel!
@@ -25,7 +23,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var clock: Clocket!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         clock.clocketDelegate = self
@@ -33,6 +30,15 @@ class ViewController: UIViewController {
         setupClock()
     }
     
+    @IBAction
+    func startButtonTapped(_ sender: Any) {
+        clock.startClock()
+        if clock.timer.isValid {
+            startButton.setTitle("STOP", for: .normal)
+        } else {
+            startButton.setTitle("START", for: .normal)
+        }
+    }
     
     func setupView() {
         controlPanels.forEach { (p: UIView) in
@@ -40,7 +46,6 @@ class ViewController: UIViewController {
             p.backgroundColor = UIColor(red: 160/255, green: 160/255, blue: 160/255, alpha: 1.0)
         }
     }
-    
     
     func setupClock() {
         displayRealTimeSwitch.addTarget(self, action: #selector(realTimeSwitchStateChanged), for: UIControl.Event.valueChanged)
@@ -62,8 +67,19 @@ class ViewController: UIViewController {
         Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(startRealTimeClock), userInfo: nil, repeats: false)
     }
     
+    func setTimeRate(timeRate: Double) {
+        clock.refreshInterval = Double(1.0/abs(timeRate))
+        timeRateStepper.value = timeRate
+        timeRateLabel.text = String(Int(timeRate)) + "X"
+        if clock.timer.isValid {
+            clock.stopClock()
+            clock.startClock()
+        }
+    }
     
-    @objc func startRealTimeClock() {
+    
+    @objc
+    func startRealTimeClock() {
         clock.displayRealTime = true
         displayRealTimeSwitch.setOn(true, animated: true)
         clock.refreshInterval = Double(1.0)
@@ -71,18 +87,8 @@ class ViewController: UIViewController {
         clock.startClock()
     }
     
-    
-    @IBAction func startButtonTapped(_ sender: Any) {
-        clock.startClock()
-        if clock.timer.isValid {
-            startButton.setTitle("STOP", for: .normal)
-        } else {
-            startButton.setTitle("START", for: .normal)
-        }
-    }
-    
-    
-    @objc func realTimeSwitchStateChanged(switchState: UISwitch) {
+    @objc
+    func realTimeSwitchStateChanged(switchState: UISwitch) {
         if switchState.isOn {
             clock.displayRealTime = true
             clock.reverseTime = false
@@ -101,7 +107,8 @@ class ViewController: UIViewController {
     }
     
     
-    @objc func countDownSwitchStateChanged(switchState: UISwitch) {
+    @objc
+    func countDownSwitchStateChanged(switchState: UISwitch) {
         clock.stopClock()
         startButton.setTitle("START", for: .normal)
         
@@ -123,7 +130,8 @@ class ViewController: UIViewController {
     }
     
     
-    @objc func timeRateStepperValueChanged(_ sender: UIStepper) {
+    @objc
+    func timeRateStepperValueChanged(_ sender: UIStepper) {
         displayRealTimeSwitch.setOn(false, animated: true)
         clock.displayRealTime = false
         
@@ -143,23 +151,11 @@ class ViewController: UIViewController {
         setTimeRate(timeRate: sender.value)
     }
     
-    
-    func setTimeRate(timeRate: Double) {
-        clock.refreshInterval = Double(1.0/abs(timeRate))
-        timeRateStepper.value = timeRate
-        timeRateLabel.text = String(Int(timeRate)) + "X"
-        if clock.timer.isValid {
-            clock.stopClock()
-            clock.startClock()
-        }
-    }
-    
-    
-    @objc func manualTimeSetSwitchStateChanged(switchState: UISwitch) {
+    @objc
+    func manualTimeSetSwitchStateChanged(switchState: UISwitch) {
         clock.manualTimeSetAllowed = switchState.isOn
     }
 }
-
 
 extension ViewController: ClocketDelegate {
     
@@ -168,11 +164,9 @@ extension ViewController: ClocketDelegate {
         displayRealTimeSwitch.setOn(false, animated: true)
     }
     
-    
     func clockStopped() {
         startButton.setTitle("START", for: .normal)
     }
-    
     
     func countDownExpired() {
         startButton.setTitle("START", for: .normal)
@@ -189,5 +183,4 @@ extension ViewController: ClocketDelegate {
         
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
     }
-    
 }
